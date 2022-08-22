@@ -64,14 +64,17 @@ footer{
 
 @media screen and (max-width:780px) {
   .main{
-    height: 90vh;
-    width: 100vw;
+    height: 80vh;
+    width: 90vw;
   }
   .grid-container{
-    width: 100vw;
-    height: 90vh;
+    width: 90vw;
+    height: 80vh;
   }
   footer{
-    margin-top: 50px;
+    margin-top: 100px;
+  }
+  .result{
+    margin-top: 0px;
   }
 }
