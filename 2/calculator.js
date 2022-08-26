@@ -9,6 +9,14 @@ let solve = () => {
   return y;
 }
 
+function disable()
+{
+ document.onkeydown = function (e) 
+ {
+  return false;
+ }
+}
+
 function divideByOne() {
   return document.getElementById('result-display').value =  1/document.getElementById('result-display').value;
 }
