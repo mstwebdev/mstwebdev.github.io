@@ -62,12 +62,12 @@ footer{
 
 @media screen and (max-width:780px) {
   .main{
-    height: 100vh;
+    height: 86vh;
     width: 100vw;
   }
   .grid-container{
     width: 100vw;
-    height: 100vh;
+    height: 86vh;
   }
   footer{
     margin-top: 100px;
