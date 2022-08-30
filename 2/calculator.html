@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator | mstwebdev</title>
+    <link rel="stylesheet" href="./calculator.css" type="text/css">
+  </head>
+  <body>
+      <div class="container">
+        <div class="main" id="display">
+        <input type="text" name="" class="result" value="" id="result-display" class="output">
+          <div class="grid-container">
+            <button class="sub-grid button" type="button" name="button" onclick="display('**')">x<sup>y</sup></button>
+            <button class="sub-grid button" type="button" name="button" onclick="cube()">&#13221;</button>
+            <button class="sub-grid button" type="button" name="button" onclick="sqr()">&#13217;</button>
+            <button class="sub-grid button" type="button" name="button" onclick="factorial(document.getElementById('result-display').value)">x!</button>
+            <button class="sub-grid button" type="button" name="button" onclick="display('(')">(</button>
+            <button class="sub-grid button" type="button" name="button" onclick="display(')')">)</button>
+            <button class="sub-grid button" type="button" name="button" onclick="e()">e</button>
+            <button class="sub-grid button" type="button" name="button" onclick="log10()">log</button>
+            <button class="sub-grid button" type="button" name="button" onclick="sinx()">sin</button>
+            <button class="sub-grid button" type="button" name="button" onclick="cosx()">cos</button>
+            <button class="sub-grid button" type="button" name="button" onclick="tanx()">tan</button>
+            <button class="sub-grid button" type="button" name="button" onclick="ln()">ln</button>
+            <button class="sub-grid button" type="button" name="button" onclick="calPer()">%</button>
+            <button class="sub-grid button" id="pi" type="button" name="button" onclick="pi()">π</button>
+            <button class="sub-grid button" type="button" name="button" id="red-design" onclick="clearDisplay()">C</button>
+            <button class="sub-grid button" type="button" name="button" onclick="back()">&larr;</button>
+            <button class="sub-grid button" type="button" name="button" onclick="divideByOne()">1/x</button>
+            <button class="sub-grid button" type="button" name="button" onclick="cuberoot()">&#8731;</button>
+            <button class="sub-grid button" type="button" name="button" onclick="sqroot()">&#8730;</button>
+            <button class="sub-grid button" type="button" name="button" onclick="display('/')">&divide;</button>
+            <button class="sub-grid button" type="button" name="button" onclick="display('7')">7</button>
+            <button class="sub-grid button" type="button" name="button" onclick="display('8')">8</button>
+            <button class="sub-grid button" type="button" name="button" onclick="display('9')">9</button>
+            <button class="sub-grid button" type="button" name="button" onclick="display('*')">&times;</button>
+            <button class="sub-grid button" type="button" name="button" onclick="display('4')">4</button>
+            <button class="sub-grid button" type="button" name="button" onclick="display('5')">5</button>
+            <button class="sub-grid button" type="button" name="button" onclick="display('6')">6</button>
+            <button class="sub-grid button" type="button" name="button" onclick="display('-')">-</button>
+            <button class="sub-grid button" type="button" name="button" onclick="display('1')">1</button>
+            <button class="sub-grid button" type="button" name="button" onclick="display('2')">2</button>
+            <button class="sub-grid button" type="button" name="button" onclick="display('3')">3</button>
+            <button class="sub-grid button" type="button" name="button" onclick="display('+')">+</button>
+            <button class="sub-grid button" type="button" name="button" onclick="display('-')">+/-</button>
+            <button class="sub-grid button" type="button" name="button" onclick="display('0')">0</button>
+            <button class="sub-grid button" type="button" name="button" onclick="display('.')">.</button>
+            <button class="equals sub-grid button" type="button" name="button" onclick="solve()">=</button>
+          </div>
+        </div>
+      </div>
+      <script  src="./calculator.js" type="text/javascript">
+      </script>
+      <footer>Designed & Developed by Meghraj Singh Tomar <br>2022 OpenSource by <a href="https://mstwebdev.github.io/" style = "color:#97f; text-decoration: none;" target="_blank">mstwebdev</a>
+        <br><p id="date" style="color:#785;"></p>
+        <script type="text/javascript">
+            document.getElementById('date').innerHTML = Date();
+        </script> </footer>
+  </body>
+</html>
